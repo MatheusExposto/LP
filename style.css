@@ -1,4 +1,4 @@
-.item{
+.lista{
     display: none;
     width: 100%;
     height: 100%;
@@ -8,11 +8,11 @@
     overflow: hidden;
     background-color: var(--background);
 }
-.item.active{
+.lista.active{
     display: block;
 }
 
-.item .title{
+.lista .title{
     font-size: 10rem;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -24,7 +24,7 @@
     transform: translate(-50%, -50%);
 }
 
-.item .fruit{
+.lista .fruit{
     width: 90%; 
     position: absolute;
     top: 0;
@@ -32,7 +32,37 @@
     
 }
 
-.item .refri{
+.fruit1{
+    width: 30%;
+    position: absolute;
+    right: 69%;
+  
+}
+.fruit2{
+    width: 30%;
+    left: 68.5%;
+    top: 15%;
+  position: absolute;
+}
+
+.fruit3{
+    position: absolute;
+bottom: 13%;
+width: 30%;
+    left: 2.2%;
+}
+
+.fruit4{  
+     width: 100%;
+    left: 45%;
+    bottom: 3%;
+  position: absolute;       
+
+
+}
+
+
+.lista .refri{
     z-index: 2;
     width: 600px;
     position: absolute;
@@ -42,12 +72,12 @@
     transform: translate(-50%, -50%);
 }
 
-.item .img{
-    width: 500px;
-    height: 400px;
-}
 
-#prev, #next {
+
+
+
+#prev{
+    cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -58,7 +88,28 @@
     color: #eee;
     font-size: x-large;
     font-family: monospace;
-    cursor: pointer;
     border-radius: 50%;
     
+    left: 20px;
+
 }
+
+#next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #eee9;
+    border: 1px solid #eee9;
+    color: #eee;
+    font-size: x-large;
+    font-family: monospace;
+    border-radius: 50%;
+    right: 20px;
+   
+}
+
+
+
